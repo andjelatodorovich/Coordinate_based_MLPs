@@ -7,8 +7,8 @@ Experiments of coordinate-based MLPs based on Pytorch-lightning
 graph LR
 	1[x]-->3[Preinitialization layer]-->4[Positional encodings]-->5[Linear layers + activation<br>256]-->6[Linear layers + activation<br>256]-->7[Linear layers + activation<br>256]-->8[Linear layers + Sgmoid<br>256]
 	2[y]-->3[Preinitialization layer]
-	7-->8[x′]
-	7-->9[y′]
+	7-->8[x']
+	7-->9[y']
 ``````
 
 |               Positional Encoding               |             Equation             |
