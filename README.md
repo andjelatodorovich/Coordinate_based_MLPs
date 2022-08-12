@@ -5,11 +5,10 @@
 Experiments of coordinate-based MLPs based on Pytorch-lightning
 ``````mermaid
 graph LR
-	1[x]-->3[P.E.]-->4[Linear layers + activation<br>256]-->5[Linear layers + activation<br>256]-->6[Linear layers + activation<br>256]-->7[Linear layers + Sgmoid<br>256]
-	2[y]-->3[P.E.]
-	7-->8[R]
-	7-->9[G]
-	7-->10[B]
+	1[x]-->3[Preinitialization layer]-->4[Positional encodings]-->5[Linear layers + activation<br>256]-->6[Linear layers + activation<br>256]-->7[Linear layers + activation<br>256]-->8[Linear layers + Sgmoid<br>256]
+	2[y]-->3[Preinitialization layer]
+	7-->8[x^\prime]
+	7-->9[y^\prime]
 ``````
 
 |               Positional Encoding               |             Equation             |
